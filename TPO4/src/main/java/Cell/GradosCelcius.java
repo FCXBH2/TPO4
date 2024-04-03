@@ -151,8 +151,14 @@ public class GradosCelcius extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        jTextField2.setText("");
-        jTextField2.setText(""+(((int)Integer.parseInt(jTextField1.getText())* 9/5 + 32)));
+       try{
+            jTextField2.setText("");
+            jTextField2.setText(""+(((double)Integer.parseInt(jTextField1.getText())* 9/5 + 32)));
+       } catch(NumberFormatException N){
+           System.out.println(N.fillInStackTrace());
+       } catch(Exception E){
+           System.out.println(E.fillInStackTrace());
+       }
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**
