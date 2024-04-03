@@ -8,6 +8,7 @@ package Cell;
  *
  * @author DANIELALEJANDROMIRAN
  */
+//Nombre: Daniel Miranda Alejandro - DNI: 45800784.
 public class GradosCelcius extends javax.swing.JFrame {
 
     /**
